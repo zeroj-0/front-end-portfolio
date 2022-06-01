@@ -1,0 +1,118 @@
+// 메인 페이지
+
+.mainbanner {
+  height: 910px;
+  background-image: url("../img/PC_minimal_new.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -160px 0;
+  position: relative;
+
+}
+
+.main-slide {
+  height: 910px;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  .title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+
+    h3 strong {
+      display: block;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+    h3 span {
+      display: block;
+      font-size: $fontSizeBig;
+      font-weight: 600;
+      line-height: 30px;
+      padding-bottom: 10px;
+    }
+
+    .main-btn {
+      width: 120px;
+      text-align: center;
+      margin: 25px auto;
+
+      button {
+        background: $gbtnColor;
+        width: 100%;
+        color: #fff;
+        font-size: $fontSizeBig;
+        font-weight: 600;
+        line-height: 55px;
+        border: none;
+      }
+    }
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  bottom: 336px !important;
+}
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: $gbtnColor;
+}
+
+  .inner {
+    &:nth-child(1) {
+      margin-top: 50px;
+    }
+
+    .box {
+      &.items_2 {
+        .items {
+          p {
+            padding-top: 274px;
+          }
+
+          p + a {
+            margin-top: 50px;
+            font-size: $fontSizeBig;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }

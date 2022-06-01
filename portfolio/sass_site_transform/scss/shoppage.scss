@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+body.subpage {
+  .sub-visual.shop-page {
+    &.shop-page-all {
+      background: url("../img/subimage_shopall.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &.shop-page-baby {
+      background: url("../img/subimage_shop_2.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &.shop-page-family {
+      background: url("../img/subimage_shop2.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &.shop-page-bathgoods {
+      background: url("../img/subimage_shop3.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    &.shop-page-present {
+      background: url("../img/subimage_shop4.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    div {
+      position: absolute;
+      width: 100%;
+      bottom: $titleFontSizeMiddle;
+      text-align: center;
+      p {
+        font-size: $fontSizeSmall;
+        padding-top: $fontSizeSmall;
+      }
+    }
+  }
+}

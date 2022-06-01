@@ -1,0 +1,30 @@
+// component
+.box {
+  display: flex;
+  .items {
+    box-sizing: border-box;
+    padding: 50px 0 0 50px;
+    flex: 100%;
+    flex-shrink: 0;
+    font-size: $fontSizeSmall;
+    letter-spacing: -1px;
+    .title {
+      font-size: $titleFontSizeMiddle;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &.items_2 {
+    .items {
+      flex: 50%;
+    }
+  }
+}
+
+// kakao maps
+.map-info-widow {
+  width: 150px;
+  text-align: center;
+  padding: 6px 0;
+}

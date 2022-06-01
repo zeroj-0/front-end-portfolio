@@ -1,0 +1,26 @@
+// common ui
+// general button
+.gbtn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: $fontColorBasic;
+  font-weight: 600;
+  border: 2px solid $borderColorPrimary;
+}
+
+a.gbtn:hover {
+  color: $fontColorBasic;
+}
+
+.w-100 {
+  width: 100%;
+  height: 100px;
+}
+.w-60 {
+  width: 100%;
+  height: 60px;
+}

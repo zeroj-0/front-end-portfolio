@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+* { box-sizing: border-box; }
+html,body {
+  height: 100%;
+}
+body {
+  background: $layoutBg;
+  color: $fontColorBasic;
+}
+
+html,body,p,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  a {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $fontColorBasic;
+  transition: .5s;
+  /* & = 본인 지칭 ( this 처럼 ) */
+  &:hover {
+    color: $fontColorHover;
+  }
+}

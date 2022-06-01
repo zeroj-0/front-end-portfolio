@@ -1,0 +1,351 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* header area */
+.headgroup {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  /* overflow: hidden; */
+  background:#fff;
+  border: 1px solid #f1f1f1;
+}
+
+.headerinbox {
+  position: relative;
+  height: 80px;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.headgroup h1  {
+  position: absolute;
+  width: 136px;
+  height: 54px;
+  padding-top: 26px
+}
+
+.headgroup h1 a {
+  width: 136px;
+  height: 54px;
+}
+
+.headgroup h1 a span{
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 24px;
+  background: url("../img/greencar_logo.png");
+  background-position: 0 -34px;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.headgroup #login-menu {
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 20px;
+}
+.headgroup #login-menu a {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  color: #767676;
+  font-size: 13px;
+  padding-left: 8px;
+}
+.headgroup #login-menu a:first-child {
+  margin-left: 0;
+}
+
+.headgroup #login-menu a:nth-child(2):before {
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 0;
+  height: 2px;
+  width: 5px;
+  background: url("../img/bg_dot.png");
+  background-repeat: no-repeat;
+}
+.headgroup nav {
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.headgroup.menufixed, .headgroup.onfun, .headgroup.menufixed.onfun {
+  border-bottom: 1px solid #e2e2e2;
+  background:#fff;
+}
+.headgroup.menufixed .main-menu a, .headgroup.onfun .main-menu a, .headgroup.menufixed.onfun #gnb a {
+  color: #000;
+}
+.headgroup.menufixed h1 a span, .headgroup.onfun h1 a span, .headgroup.menufixed.onfun h1 a span {
+  background-position: 0 -34px;
+}
+.headgroup.menufixed #login-menu a, .headgroup.onfun #login-menu a, .headgroup.menufixed.onfun #login-menu a {
+  color: #767676;
+}
+
+.headgroup.onfun .main-menu li a:hover, .headgroup.onfun ul.submenu a:hover {
+  color: #00be5a;
+}
+.head-sub-wrap {
+  overflow: hidden;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 80px;
+  transition: .2s;
+}
+
+.head-sub-wrap.onfun {
+  height: 239px;
+  background: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  padding-top: 80px;
+  z-index: -1;
+}
+.main-menu {
+  height: 80px;
+  padding-left: 240px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+}
+.headgroup.onfun .main-menu {
+  border-bottom: 1px solid #e2e2e2;
+}
+ul.submenu {
+  display: none;
+  z-index: 5000;
+  width: 100%;
+  height: 240px;
+  padding-top: 19px;
+}
+ul.submenu li {
+  text-align: center;
+  width: 100%;
+}
+ul.submenu li a {
+  display: block;
+  line-height: 34px;
+  height: inherit;
+  font-size: 16px;
+  color: #3c3c3c;
+  letter-spacing: -0.03em;
+  margin: 0 auto;
+}
+ul.submenu li a:hover {
+  border: none;
+}
+.main-menu li {
+  /* height: 80px; */
+  line-height: 80px;
+  float: left;
+  width: calc(100% / 4 - 40px);
+}
+.main-menu li a {
+  display: block;
+  height: 80px;
+  line-height: 78px;
+  margin: 0 40px;
+  color: #000;
+}
+.main-menu li a:hover {
+  box-sizing: border-box;
+  border-bottom: 2px solid #00be5a;
+}
+
+/* footer area*/
+#footer {
+  /* background: #eee; */
+}
+#footer .footer_box1 {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #f1f1f1;
+  overflow:hidden;
+}
+#footer .footer_inner {
+  width: 1210px;
+  margin: 0 auto;
+}
+#footer .footer1 {
+  float: left;
+}
+#footer .footer2 {
+  float:right;
+  padding-right: 10px;
+}
+#footer .footer1 li{
+  border-right: 1px solid #f1f1f1;
+  float:left;
+}
+#footer .footer1 li:first-child{
+  border-left: 1px solid #f1f1f1;
+}
+#footer .footer1 li a{
+  display: inline-block;
+  width: 115px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 48px;
+  color: #767676;
+}
+#footer .footer2 li {
+  float:left;
+  margin-left: 30px;
+}
+#footer .footer2 li:first-child {
+  margin-left: 0;
+}
+
+#footer .footer_box2 {
+  position: relative;
+  width: 1210px;
+  margin: 0 auto;
+}
+#footer .footer_box2 .footer_box2_inner {
+  padding: 30px 0 22px 10px;
+  overflow: hidden;
+}
+#footer .footer_box2 .gnb {
+  float: left;
+  display: block;
+}
+#footer .footer_box2 .gnb li {
+  float: left;
+  position: relative;
+  padding-left: 17px;
+}
+#footer .footer_box2 .gnb li:before {
+  position: absolute;
+  content: '';
+  height: 12px;
+  width: 1px;
+  top: 4px;
+  left: 8px;
+  background: #DADADA;
+}
+#footer .footer_box2 .gnb li:first-child {
+  padding-left: 0;
+}
+#footer .footer_box2 .gnb li:first-child:before {
+  display: none;
+}
+#footer .footer_box2 .gnb li a{
+  font-size: 14px;
+  color: #3c3c3c;
+}
+#footer .footer_box2 .sns {
+  position: absolute;
+  top: 23px;
+  right: 5px;
+}
+#footer .footer_box2 .sns li{
+  width: 34px;
+  height: 34px;
+  margin-left: 8px;
+  float: left;
+}
+#footer .footer_box2 .sns li:first-child{
+  margin-left: 0;
+}
+#footer .footer_box2 .sns li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/sp_greencar.png") no-repeat;
+  color: transparent;
+}
+#footer .footer_box2 .sns li .facebook{
+  background-position: 0 -267px;
+}
+#footer .footer_box2 .sns li .blog{
+  background-position: -42px -267px;
+}
+#footer .footer_box2 .sns li .instagram{
+  background-position: -84px -267px;
+}
+#footer .footer_box2 .sns li .post{
+  background-position: -126px -267px;
+}
+#footer .footer_box2 .sns li .youtube{
+  background-position: -168px -267px;
+}
+
+#footer .information {
+  display: inline-block;
+  width: 100%;
+  margin-left: 6px;
+  padding: 0 0 30px 10px;
+}
+#footer .information span {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #767676;
+}
+#footer .footer_emblem {
+  width: 100%;
+}
+#footer .footer_emblem .emblem-inner {
+  width: 1210px;
+  border-top: 1px solid #DADADA;
+  margin: 0 auto;
+}
+#footer .footer_emblem .emblem-inner ul{
+  overflow: hidden;
+  padding: 27px 0 0 10px;
+  width: 100%;
+}
+#footer .footer_emblem .emblem-inner ul li{
+  float: left;
+  margin-left: 24px;
+  overflow: hidden;
+}
+#footer .footer_emblem .emblem-inner ul li:first-child{
+  margin-left: 0;
+}
+#footer .footer_emblem .emblem-inner ul li span{
+  float: left;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #767676;
+  letter-spacing: -0.03em;
+}
+.emblem1, .emblem2, .emblem3, .emblem4, .emblem5, .emblem6 {
+  display: block;
+  width: 34px;
+  height: 30px;
+  margin: 3px 10px 0 0;
+  background: url("../img/sp_greencar.png") no-repeat;
+}
+.emblem1 {
+  background-position: -189px -162px;
+}
+.emblem2 {
+  background-position: -224px -162px;
+}
+.emblem3 {
+  width: 40px;
+  background-position: -189px -197px;
+}
+.emblem4 {
+  width: 32px;
+  background-position: -236px -197px;
+}
+.emblem5 {
+  width: 23px;
+  background-position: -273px -197px;
+}
+.emblem6 {
+  width: 40px;
+  background-position: -189px -232px;
+}
