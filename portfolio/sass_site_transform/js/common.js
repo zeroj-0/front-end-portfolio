@@ -88,4 +88,10 @@ $(function() {
   headerWidth = headerWidth / 2;
   $(".header-wrap").css("left", headerWidth);
 
+
+  $("table.review tr td.textExplain").each(function(){
+    let tdHeight = parseInt($(this).css("height"))-20;
+    $(".nickname",this).css("top",tdHeight/2);
+  });
+
 });

@@ -360,6 +360,48 @@ body.subpage {
                 }
               }
             }
+            &.review {
+              a {
+                text-decoration: none;
+              }
+              td {
+                border-left: none;
+                border-right: none;
+                border-top: none;
+                &.thumb {
+                  width: 130px;
+                  img {
+                    border-radius: 0;
+                  }
+                }
+                &.textExplain {
+                  position: relative;
+                  padding: 20px 20px 20px 10px;
+                  .subject {
+                    width: 500px;
+                    a {
+                      font-size: $fontSizeSmall;
+                      color: #959ea6;
+                      font-weight: 600;
+                    }
+                    &.tit {
+                      a {
+                        font-size: $fontSizeNormal;
+                        color: #676e73;
+                        font-weight: 500;
+                      }
+                    }
+                  }
+                  .nickname {
+                    position: absolute;
+                    font-size: $fontSizeSmall;
+                    font-weight: 500;
+                    color: #676e73;
+                    right: 20px;
+                  }
+                }
+              }
+            }
           }
           &.shop {
             width: 835px;
@@ -749,6 +791,63 @@ body.subpage {
             margin-top: 10px;
             letter-spacing: -1px;
           }
+        }
+      }
+    }
+    nav {
+      margin: 50px 0;
+      .pagination {
+        justify-content: center;
+        .page-link {
+          height: 35px;
+          border: none;
+          color: #959ea6;
+          padding: 0 10px;
+          font-size: $fontSizeNormal;
+          line-height: 35px;
+        }
+        .page-link.active {
+          color: #676e73;
+          font-weight: 500;
+        }
+      }
+    }
+    .searchBar{
+      display: flex;
+      justify-content: center;
+      .searchBar-wrap {
+        #selectbox {
+          height: 40px;
+          padding: 0 10px;
+          margin: 0 0 0 10px;
+          border-color: #c3cfd9;
+          font-size: $fontSizeNormal;
+          background: url("../img/review/arr-select.png");
+          background-repeat: no-repeat;
+          background-position: right 12px center;
+          appearance: none;
+          width: 100px;
+        }
+        input {
+          width: 300px;
+          height: 40px;
+          border: 1px solid #c3cfd9;
+          font-size: $fontSizeNormal;
+          line-height: 40px;
+          margin-left: 10px;
+        }
+        .review-btn {
+          display: inline-block;
+          width: 100px;
+          height: 40px;
+          line-height: 40px;
+          margin-left: 10px;
+          background: $gbtnColorHover;
+          color: #fff;
+          text-decoration: none;
+          font-size: $fontSizeNormal;
+          font-weight: 500;
+          text-align: center;
         }
       }
     }
