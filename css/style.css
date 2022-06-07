@@ -51,12 +51,6 @@
   transition: .2s;
 }
 
-section:nth-child(3) .btn, section:nth-child(5) .btn {
-  width: 210px;
-}
-section:nth-child(4) .btn {
-  width: 240px;
-}
 .btn-txt {
   padding: 10px 0 5px;
 }
