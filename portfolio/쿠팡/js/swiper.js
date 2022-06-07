@@ -15,7 +15,7 @@ var gallerySlide = new Swiper(".gallery-slide-container", {
    loop: true,
    spaceBetween: 30,
    autoplay: {
-     delay: 10000,
+     delay: 5000,
      disableOnInteraction: false,
    },
    freeMode: true,
